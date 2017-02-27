@@ -28,20 +28,20 @@
     "@angular/platform-browser-dynamic": "~2.2.0",
     "@angular/router": "~3.2.0",
     "@angular/upgrade": "~2.2.0",
-    "systemjs": "0.19.40",
     "core-js": "~2.4.1",
+    "ng2f-bootstrap": "~0.0.4",
     "reflect-metadata": "~0.1.8",
     "rxjs": "5.0.0-beta.12",
-    "zone.js": "~0.6.26",
-    "ng2f-bootstrap": "~0.0.4"
-
+    "systemjs": "0.19.40",
+    "toastr": "^2.1.2",
+    "zone.js": "~0.6.26"
   },
   "devDependencies": {
-        "concurrently": "^2.2.0",
-        "lite-server": "^2.2.0",
-        "tslint": "^3.7.4",
-        "typescript": "^2.0.2",
-        "typings": "^1.0.4"
+    "concurrently": "^2.2.0",
+    "lite-server": "^2.2.0",
+    "tslint": "^3.7.4",
+    "typescript": "^2.0.2",
+    "typings": "^1.0.4"
   },
   "repository": {}
 }
