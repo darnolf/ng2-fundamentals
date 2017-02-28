@@ -1,0 +1,164 @@
+/*
+     // Location: C:\Users\daniela\AppData\Roaming\Code\User\snippets
+     // Place your snippets for typescript.json here. Each snippet is defined under a snippet name and has a prefix, body and 
+     // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+     // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+     // Example:
+     "Print to console": {
+        "prefix": "log",
+        "body": [
+            "console.log('$1');",
+            "$2"
+        ],
+        "description": "Log output to console"
+    }
+*/
+{
+    "My Snippet Name: REPLACE OR IT WILL BE OVERWRITTEN": {
+        "prefix": "yourPrefixHere",
+        "body": [
+            "export class NavBarComponent  {",
+            "",
+            "}$1"
+        ],
+        "description": "Your snippet description here."
+    },
+    "Angular 2 service injector OnInit() ": {
+        "prefix": "ngserviceinject",
+        "body": [
+            "//import { Component, OnInit } from '@angular/core';",
+            "//import { EventService } from './shared/event.service';",
+            "",
+            "export class EventListComponent implements OnInit  {",
+            "    events: any[]",
+            "    constructor(private eventService: EventService) {",
+            "    }",
+            "    ngOnInit() {",
+            "        this.events = this.eventService.getEvents();",
+            "    }",
+            "}$1"
+        ],
+        "description": "Angular 2 service injector OnInit()."
+    },
+    "Angular 2 Basic Service no dependencies": {
+        "prefix": "ngservicesimple",
+        "body": [
+            "import { Injectable } from '@angular/core'",
+            "",
+            "@Injectable()",
+            "export class ParamsService {",
+            "    getParams() {",
+            "        return myvariable",
+            "    }",
+            "}",
+            "",
+            "myvariable = 'Some Value';$1"
+        ],
+        "description": "Angular 2 Basic Service no dependencies."
+    },
+    "Angular 2 mulptiple inline style function": {
+        "prefix": "ngstylemultifn",
+        "body": [
+            "//[ngStyle]=\"getElemStyles()\"",
+            "getElemStyles():any {",
+            "if( this.testvariable === 'value')",
+            "        return {color: '#003300', 'font-weight': 'bold'}",
+            "    return {}",
+            "}  $1"
+        ],
+        "description": "Angular 2 mulptiple inline style function."
+    },
+    "Angular 2 mulptiple inline style": {
+        "prefix": "ngstylemulti",
+        "body": [
+            "[ngStyle]=\"{'color': testvalue? === 'value' ? 'red':'green', 'font-weight': testvalue? === 'value' ? 'bold':'normal'}\"$1"
+        ],
+        "description": "Angular 2 mulptiple inline style."
+    },
+    "Angular 2 single inline style": {
+        "prefix": "ngstylesingle",
+        "body": [
+            "[style.color]=testvalue? === 'value' ? 'red':'green'$1"
+        ],
+        "description": "Angular 2 single inline style"
+    },
+    "Angular 2 multiple classes as string function": {
+        "prefix": "ngclassfnstring",
+        "body": [
+            "//[ngClass]=\"setClassString()\"",
+            "setClassString() {",
+            "if( this.event && this.event.time === '8:00 am')",
+            "    return 'green bold'",
+            "return ''",
+            "} $1"
+        ],
+        "description": "Angular 2 multiple classes as string function."
+    },
+    "Angular 2 multiple classes as object function": {
+        "prefix": "ngclassfnobj",
+        "body": [
+            "//[ngClass]=\"setClassObj()\"",
+            "setClassObj() {",
+            "    const isEarlyStart = this.event && this.event.time === '8:00 am'",
+            "    return {green: isEarlyStart, bold: isEarlyStart}",
+            "}$1"
+        ],
+        "description": "Angular 2 multiple classes as object function"
+    },
+    "Angular 2 single class string.": {
+        "prefix": "ngclasssingle",
+        "body": [
+            "[class.green]=\"event?.time === '8:00 am'\"$1"
+        ],
+        "description": "Angular 2 single class string."
+    },
+    "Angular 2 multiple classes string": {
+        "prefix": "ngclassmultiple",
+        "body": [
+            "[ngClass]=\"{green: event?.time === '8:00 am',bold: event?.time === '8:00 am'}\"$1"
+        ],
+        "description": "Angular 2 multiple classes string."
+    },
+    "Angular 2 Switch": {
+        "prefix": "ngswitch",
+        "body": [
+            "<div [ngSwitch]=\"event?.time\">Time: {{event.time}}",
+            "    <span *ngSwitchCase=\"'8:00 am'\">(Early Start)</span>",
+            "    <span *ngSwitchCase=\"'10:00 am'\">(Late Start)</span>",
+            "    <span *ngSwitchDefault>(Normal Start)</span>",
+            "</div>$1"
+        ],
+        "description": "Angular 2 Switch"
+    },
+    "Angular 2 Root Module": {
+        "prefix": "ngmoduleroot",
+        "body": [
+            "import { NgModule } from '@angular/core';",
+            "import { BrowserModule } from '@angular/platform-browser';",
+            "",
+            "import { MyAppComponent } from './myapp.component';",
+            "",
+            "@NgModule({",
+            "    imports: [BrowserModule],",
+            "    declarations: [MyAppComponent],",
+            "    bootstrap:  [MyAppComponent]",
+            "",
+            "})",
+            "export class AppComponent  {}$1"
+        ],
+        "description": "Angular 2 Root Module."
+    },
+    "Angular 2 Component": {
+        "prefix": "ngcomponent",
+        "body": [
+            "import { Component } from '@angular/core';",
+            "",
+            "@Component({",
+            "  selector: 'my-app',",
+            "  template: `<h1>Hello {{name}}</h1>`,",
+            "})",
+            "export class AppComponent  { name = 'Angular'; }$1"
+        ],
+        "description": "Angular 2 Component"
+    }
+}
