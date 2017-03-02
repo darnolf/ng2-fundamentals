@@ -64,4 +64,6 @@ this.router.navigate(['events'])
 
 [ngClass]="{'error': profileForm.controls.firstName.invalid && profileForm.controls.firstName.touched}"
 
+pattern=".*\/.*.(png|jpg)"
 
+<img [src]="newEventForm.controls.imageUrl.value" *ngIf="newEventForm.controlls.imageUrl?.valid"/>
