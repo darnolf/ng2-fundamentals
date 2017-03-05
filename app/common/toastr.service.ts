@@ -1,14 +1,10 @@
-import { OpaqueToken } from '@angular/core'
+import { OpaqueToken } from '@angular/core';
 
-export let TOASTR_TOKEN = new OpaqueToken('toastr')
+export let TOASTR_TOKEN = new OpaqueToken('toastr');
 
-export interface Toastr {
+export interface IToastr {
     success (msg: string, title?: string): void;
     info (msg: string, title?: string): void;
     warning (msg: string, title?: string): void;
     error (msg: string, title?: string): void;
 }
-
-
-
-

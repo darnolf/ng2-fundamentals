@@ -1,9 +1,9 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core'
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'upvote',
   styleUrls: ['/app/events/event-details/upvote.component.css'],
-  template:`
+  template: `
     <div class="votingWidgetContainer pointable" (click)="onClick()">
       <div class="well votingWidget">
         <div class="votingButton">
@@ -14,7 +14,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
         </div>
       </div>
     </div>
-  `
+  `,
 })
 export class UpvoteComponent {
   @Input() count: number;
@@ -23,7 +23,6 @@ export class UpvoteComponent {
   }
   @Output() vote = new EventEmitter();
   iconColor: string;
-
 
   onClick() {
     this.vote.emit({});
